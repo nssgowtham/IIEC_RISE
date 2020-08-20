@@ -1,0 +1,86 @@
+import os
+
+import webbrowser
+while True:
+    
+    print("chat with me what u want:",  end=' ')
+
+    p=input()
+    
+    if p == "youtube":
+        webbrowser.open("https://www.youtube.com/.")
+        
+    elif p == "google":
+        webbrowser.open("https://www.google.com/.")
+        
+    elif p == "linkedin":
+        webbrowser.open("https://www.linkedin.com/.")
+        
+    elif p == "wiki":
+        webbrowser.open("https://www.wikipedia.com/.")
+        
+    elif p == "fb":
+        webbrowser.open("https://www.facebook.com/.")
+
+    elif p == "gmail":
+        webbrowser.open("https://www.gmail.com/.")    
+
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("chrome" in p) or ("browser" in p)):
+        os.system('''open -a "Google Chrome"''')
+        
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("calci" in p) or ("calculator" in p)):
+        os.system('''open -a "Calculator"''')
+        
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("cal" in p) or ("calendar" in p)):
+        os.system('''open -a "Calendar"''')
+        
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("images" in p) or ("photos" in p) or("pics" in p)):
+        os.system('''open -a "Photos"''')
+    
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("discord" in p)):
+        os.system('''open -a "Discord"''')
+        
+    elif (("run" in p) or ("open" in p) or ("play" in p)) and (("player" in p) or ("vlc" in p) or ("video" in p)):
+        os.system('''open -a "VLC"''')
+    
+    elif (("run" in p) or ("open" in p) or ("play" in p)) and (("songs" in p) or ("itunes" in p) or ("music" in p)):
+        os.system('''open -a "Music"''')
+        
+    elif (("run" in p) or ("open" in p) or ("execute" in p)) and (("mail" in p) or ("email" in p)):
+        os.system('''open -a "Mail"''')
+
+    elif (("run" in p) or ("open" in p)) and (("editor" in p) or ("text" in p) or ("sublime" in p)):
+        os.system('''open -a "Sublime Text"''')
+        
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("chrome" in p) or ("browser" in p)):
+        os.system("pkill Google Chrome")
+        
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("calci" in p) or ("calculator" in p)):
+        os.system("pkill Calculator")
+    
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("cal" in p) or ("calendar" in p)):
+        os.system("pkill Calendar")
+        
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("images" in p) or ("photos" in p) or("pics" in p)):
+        os.system("pkill Photos")
+                                                                
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("discord" in p)):
+        os.system("pkill Discord")
+                  
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("mail" in p) or ("email" in p)):
+        os.system("pkill Mail")
+        
+    elif (("close" in p) or ("stop" in p) or ("quit" in p)) and (("player" in p) or ("video" in p) or("vlc" in p)):
+        os.system("pkill VLC")
+        
+    elif (("close" in p) or ("stop" in p) or ("quit" in p)) and (("songs" in p) or ("itunes" in p) or ("music" in p)):
+        os.system("pkill Music")
+
+    elif (("close" in p) or ("exit" in p) or ("quit" in p)) and (("editor" in p) or ("text" in p) or ("sublime" in p)):
+        os.system("pkill Sublime Text")
+
+    elif  ("exit" in p)  or ("quit" in p) or ("close" in p):
+        break
+
+    else:
+        print("dont support")
